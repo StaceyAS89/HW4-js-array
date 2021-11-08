@@ -36,8 +36,11 @@ arr12Str;
 
   console.log('------------- # 9')
 
-  let users = [{id: 1, name: "Vic", age: 21},  {id: 2, name: "Petya", age: 30}, {id: 3, name: "Jon", age: 5}];
-let names = users.map(item => item.name);
+  let users2 = [
+  {id: 1, name: "Vic", age: 21},  
+  {id: 2, name: "Petya", age: 30}, 
+  {id: 3, name: "Jon", age: 5}];
+let names = users2.map(item => item.name);
 names;
 
 
@@ -65,7 +68,7 @@ names;
       }
 
       console.log('------------- # 12')
-      slArray(arr, startIndex, endIndex){
+      function slArray(arr, startIndex, endIndex) {
         return arr.slice([startIndex], [endIndex])
       }
 
