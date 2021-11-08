@@ -15,15 +15,15 @@ function ask(question, yes, no) {
 
   let str1 = 'my-short-string';
 let str1Arr = str1.split('-');
-str1Arr;
+console.log(str1Arr);
 
 console.log('------------- # 7')
 
 
 let arr12 =  ['JavaScript', 2015];
 let arr12Str = arr12.join(' ');
-arr12Str;
-'JavaScript 2015'
+console.log(arr12Str);
+
   console.log('------------- # 8')
 
   let users = [
@@ -32,7 +32,7 @@ arr12Str;
    {id: 3, name: "Jon", age: 5}
   ];
   let user = users.filter((item)=> item.age < 20);
-  user;
+  console.log(user);
 
   console.log('------------- # 9')
 
@@ -42,7 +42,7 @@ arr12Str;
   {id: 3, name: "Jon", age: 5}];
 let names = users2.map(item => item.name);
 names;
-
+console.log( names );
 
   console.log('------------- # 10')
 
@@ -59,20 +59,21 @@ names;
     }
     let arr = [5,3,8,1];
     filterRangeInPlace(arr, 1, 4);
-    arr;
+    console.log(arr);
 
     console.log('------------- # 11')
 
     function createArray(message, separator) {
       return message.split(separator);
       }
+console.log(createArray);
 
       console.log('------------- # 12')
       function slArray(arr, startIndex, endIndex) {
         return arr.slice([startIndex], [endIndex])
       }
 
-
+console.log(slArray);
   console.log('------------- # 13')
   function sumAll(...args) {
     let sumResult = 0;
@@ -80,5 +81,5 @@ names;
     sumResult+= arg;}
     return sumResult;
     }
-
+console.log(sumAll);
   
